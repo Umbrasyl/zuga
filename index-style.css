@@ -136,7 +136,6 @@ header {
   justify-content: space-between;
   align-content: center;
   line-height: 1.8rem;
-  border-radius: 10px;
 }
 
 .black-div-button:hover {
@@ -332,18 +331,38 @@ svg {
 .referances {
   margin-top: 6vh;
   padding: 6vh var(--padding-left);
+  overflow-x: hidden;
 }
 
 .referances > p {
   margin-bottom: 6vh;
 }
 
+@keyframes carousel {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -100vw;
+  }
+}
+
 .brand-scroll {
   margin-left: calc(-1 * var(--padding-left));
   margin-bottom: 6vh;
-  width: 100vw;
+  width: 200vw;
   height: 25vh;
   background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  animation: carousel 15s linear infinite;
+}
+
+.brand-scroll > img {
+  width: 5vw;
+  height: 5vw;
 }
 
 .button-holder > a > div {
