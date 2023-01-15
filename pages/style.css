@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+:root {
+  --white-text: rgb(222, 222, 211);
+  --padding-left: 7vw;
+}
+
+/*--- General Use ---*/
+
+.h1 {
+  font-size: calc(20px + 2vw);
+}
+
+.h2 {
+  font-size: calc(16px + 2vw);
+}
+
+.h3 {
+  font-size: calc(12px + 1vw);
+}
+
+.h4 {
+  font-size: calc(10px + 0.8vw);
+}
+
+.h5 {
+  font-size: calc(6px + 0.5vw);
+}
+
+.h6 {
+  font-size: calc(4px + 0.2vw);
+}
+
+.thin-text {
+  font-weight: 250;
+}
+
+.spaced-text {
+  line-height: 4rem;
+}
+
+/*--- Header ---*/
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: rgb(244, 244, 244);
+  font-family: sans-serif;
+}
+
+header {
+  background-color: rgb(33, 33, 33);
+  color: var(--white-text);
+  display: flex;
+  padding: 4vh 6vw;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+}
+
+.nav {
+  display: flex;
+  gap: 3vw;
+  margin-right: 4vw;
+}
+
+/*--- Title ---*/
+
+.about-title-big{
+  font-size: calc(20px + 3vw);
+  font-weight: 800;
+  width: 100vw;
+  height: 10vh;
+  padding: 14vh 6vw;
+}
