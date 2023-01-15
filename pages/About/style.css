@@ -1,5 +1,5 @@
 .wrapper{
-  padding: 16vh var(--padding-left);
+  padding: 4vh var(--padding-left);
 }
 
 /*--- Header ---*/
@@ -31,7 +31,7 @@ header {
   margin-right: 4vw;
 }
 
-/*--- Title ---*/
+/*--- Hero---*/
 
 .body__title--big {
   font-size: calc(20px + 3vw);
@@ -39,9 +39,16 @@ header {
   width: 100vw;
   height: 10vh;
   padding: 14vh 6vw;
+  padding-bottom: 6vh;
 }
 
-/*--- HERO BUTTON ---*/
+.hero__title--small{
+  font-weight: 700;
+  color: red;
+  text-transform: uppercase;
+}
+
+/*--- Hero Button ---*/
 .black-div-button {
   background-color: rgb(0, 0, 0);
   opacity: 0.6;
