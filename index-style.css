@@ -190,7 +190,7 @@ svg {
 /*--- Scroll Slider ---*/
 
 .scroll-wrapper {
-  height: 300vh;
+  height: 200vh;
   position: relative;
 }
 
@@ -248,7 +248,7 @@ svg {
 
 .info-text>p:first-child {
   grid-column: 1 / 4;
-  grid-row: ;
+  grid-row: 1 / 2;
 }
 
 .visible {

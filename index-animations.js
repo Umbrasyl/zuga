@@ -9,7 +9,7 @@ const topOffsetArray = [];
 const cardsArray = [];
 const slideArray = [];
 for(let i = 0; i < 4; i++) {
-  topOffsetArray.push(sliderTop + Math.floor((sliderHeight / 4) * i * 0.7));
+  topOffsetArray.push(sliderTop + Math.floor((sliderHeight / 4) * i * 0.5));
   cardsArray.push(document.querySelector(`[data-card='${i+1}']`));
   slideArray.push(document.querySelector(`[data-slide='${i+1}']`));
 }
