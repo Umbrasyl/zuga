@@ -75,46 +75,43 @@ header {
   grid-row: 3 / 4;
 }
 
-/*--- Hero Button ---*/
-.black-div-button {
-  background-color: rgb(0, 0, 0);
-  opacity: 0.6;
-  padding: 2vh 1.6vw;
-  width: 22vw;
-  height: 12vh;
-  font-weight: 300;
+/*--- Services  ---*/
+/*--- Services Left Section ---*/
+
+.services__card{
   display: flex;
+  
+}
+
+.services__title--small{
+  overflow: hidden;
+}
+
+
+
+.services__article__list__ul{
+  display: flex;
+  flex-direction: start;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-content: center;
-  line-height: 1.8rem;
-  border-radius: 10px;
 }
 
-.black-div-button:hover {
-  opacity: 1;
+.services__article__list__ul{
+  width: 40%;
 }
 
-.black-div-button > p {
-  width: 15ch;
-  color: var(--white-text);
-  margin: auto 0;
+/*--- Services Right Section ---*/
+
+.services__clientcard{
+  background-color: white;
+  padding: 0.5rem;
 }
 
-svg {
-  width: 4vw;
-  height: auto;
-  overflow: visible;
-}
+.services__clientcard__img{
+  background-color: black;
+  width: 175px; /* px to be changed to a responsive value later*/
+  height: 175px;
 
-.black-div-button #arrow {
-  transition: transform 1s ease, opacity 1s ease;
-  transform: translateX(-100%);
-  opacity: 0;
-}
-
-.black-div-button:hover #arrow {
-  transform: translateX(0%);
-  opacity: 1;
 }
 
 /*--- Contact ---*/
