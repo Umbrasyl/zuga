@@ -1,7 +1,52 @@
 /* #region UTILITY */
 :root {
-  --cl-priamry-100: white;
+  --cl-neutral-100: rgb(255, 255, 255);
+  --cl-neutral-200: rgb(242, 242, 242);
+  --cl-neutral-900: rgb(10, 10, 10);
+  --cl-accent-400: rgb(199, 44, 67);
 }
+
+div.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.fs-200 { font-size: 1rem; }
+.fs-300 { font-size: 1.25rem; }
+.fs-400 { font-size: 1.5rem; }
+.fs-500 { font-size: 1.875rem; }
+.fs-600 { font-size: 3.125rem; }
+.fs-700 { font-size: 3.375rem; }
+.fs-800 { font-size: 3.875rem; }
+.fs-900 { font-size: 4.7rem; }
+
+@font-face {
+  font-family: galano-grotesque-light;
+  src: url(../assets/fonts/Galano\ Grotesque\ Light.woff);
+}
+
+@font-face {
+  font-family: galano-grotesque-semibold;
+  src: url(../assets/fonts/Galano\ Grotesque\ Semi\ Bold.woff);
+}
+
+@font-face {
+  font-family: galano-grotesque-bold;
+  src: url(../assets/fonts/Galano\ Grotesque\ Bold.woff);
+}
+
+body {
+  background-color: var(--cl-neutral-200);
+  font-family: sans-serif;
+}
+
 /* #endregion */
 
 
@@ -91,7 +136,27 @@ a:visited {
 /* #endregion */
 
 /* #region HEADER */
+header {
+  background-color: var(--cl-neutral-900);
+  color: var(--cl-neutral-200);
+  display: flex;
+  padding: 2rem 3.5rem;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+}
 
+.logo {
+  width: 6rem;
+  height: 2rem;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
 /* #endregion */
 
 /* #region FOOTER */

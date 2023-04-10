@@ -7,14 +7,15 @@
     <title>Zuga</title>
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css" />
-    <script src="./index-animations.js" defer></script>
+    <script src="./scripts/index-animations.js" defer></script>
   </head>
   <body>
     <header>
-      <img src="" alt="Zuga Dijital Reklam Ajansı'nın Logosu" />
+      <img class="logo" src="" alt="Zuga Dijital Reklam Ajansı'nın Logosu" />
+      
       <div>
-        <nav>
-          <ul class="nav">
+        <nav id="navigation" aria-label="Main Menu">
+          <ul role="list" class="nav">
             <li class="nav-item"><a href="">Projeler</a></li>
             <li class="nav-item"><a href="">Hizmetler</a></li>
             <li class="nav-item"><a href="">Hakkımızda</a></li>
@@ -24,7 +25,7 @@
         </nav>
       </div>
     </header>
-    <div class="content">
+    <main>
       <div class="home">
         <p class="h4">MERHABA</p>
         <div class="text-wrapper">
@@ -399,7 +400,7 @@
           </div>
         </form>
       </div>
-    </div>
+    </main>
     <footer></footer>
   </body>
 </html>

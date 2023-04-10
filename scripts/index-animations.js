@@ -1,6 +1,6 @@
 "use strict";
 
-// Horizontal Scroll Slider
+// #region Horizontal Scroll Slider
 const scrollSlider = document.querySelector(".scroll-slider");
 const sliderContainer = document.querySelector(".scroll-wrapper");
 const sliderTop = getCoord(sliderContainer).top;
@@ -47,9 +47,9 @@ function getCoord(ele) {
     bottom: rect.bottom + window.scrollY,
   };
 }
+// #endregion
 
-// Right and Left Buttons sliding cards.
-
+// #region Right and Left Buttons sliding cards.
 const leftButton = document.querySelector(".left-button");
 const rightButton = document.querySelector(".right-button");
 const cardGrid = document.querySelector(".card-grid");
@@ -75,3 +75,5 @@ const moveCardsHorizontally = function(ele, direction) {
   }
   ele.style.transform = `translateX(${currentX}vw)`;
 }
+// #endregion
+
