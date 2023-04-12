@@ -100,12 +100,17 @@ const mediaQuery = window.matchMedia("(min-width: 50em)");
 
 function handleWidthChange(e) {
   if(e.matches) {
+    // Remove the mobile columnar layout of the navigation menu
     nav.classList.remove("nav-mobile");
+    // Remove the big and bold font
     nav.classList.remove("ff-ggb");
     nav.classList.remove("fs-500");
+    // Hide the mobile nav button
     div_btn_nav.classList.add("visually-hidden");
+    // Remove the full width and height nav menu
     nav_container.classList.remove("nav-container");
     nav_container.classList.remove("visually-hidden");
+    // Appen the nav menu to the top of the page header banner or it won't show up  as the banner is position fixed.
     header_banner.appendChild(nav_container);
 
   } else {
@@ -115,6 +120,7 @@ function handleWidthChange(e) {
     div_btn_nav.classList.remove("visually-hidden");
     nav_container.classList.add("nav-container");
     nav_container.classList.add("visually-hidden");
+    // Append the full page menu to the header element.
     header.appendChild(nav_container);
   }
 }
