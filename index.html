@@ -7,20 +7,31 @@
     <title>Zuga</title>
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css" />
-    <script src="./scripts/index-animations.js" defer></script>
+    <script src="./scripts/common.js" defer></script>
   </head>
-  <body>
+  <body class="ff-ggl fs-200">
     <header>
-      <img class="logo" src="" alt="Zuga Dijital Reklam Ajansı'nın Logosu" />
-      
-      <div>
+      <div class="header-banner">
+        <img class="logo" src="" alt="Zuga Dijital Reklam Ajansı'nın Logosu" />
+        <div id="div-btn-nav">
+          <button class="btn-nav" id="btn-nav">
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="stroke-bottom" d="M4 18L20 18" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+              <path class="stroke-mid" d="M4 12L20 12" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+              <path class="stroke-top" d="M4 6L20 6" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="nav-container" class="visually-hidden animate-width nav-container">
         <nav id="navigation" aria-label="Main Menu">
-          <ul role="list" class="nav">
-            <li class="nav-item"><a href="">Projeler</a></li>
-            <li class="nav-item"><a href="">Hizmetler</a></li>
-            <li class="nav-item"><a href="">Hakkımızda</a></li>
-            <li class="nav-item"><a href="">Blog</a></li>
-            <li class="nav-item"><a href="">İletişim</a></li>
+          <ul role="list" class="nav ff-ggb fs-500 link-hover-red nav-mobile">
+            <li><a href="">Projeler</a></li>
+            <li><a href="">Hizmetler</a></li>
+            <li><a href="">Hakkımızda</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">İletişim</a></li>
           </ul>
         </nav>
       </div>

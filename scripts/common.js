@@ -1,4 +1,5 @@
 "use strict";
+const nav_container = document.getElementById("nav-container");
 
 // #region Horizontal Scroll Slider
 const scrollSlider = document.querySelector(".scroll-slider");
@@ -75,5 +76,51 @@ const moveCardsHorizontally = function(ele, direction) {
   }
   ele.style.transform = `translateX(${currentX}vw)`;
 }
+// #endregion
+
+// #region Mobile Nav Close Button Animation
+const btn_nav = document.getElementById("btn-nav");
+const btn_nav_stroke_top = document.querySelector(".stroke-top");
+const btn_nav_stroke_mid = document.querySelector(".stroke-mid");
+const btn_nav_stroke_bottom = document.querySelector(".stroke-bottom");
+btn_nav.addEventListener("click", ()=>{
+  btn_nav_stroke_top.classList.toggle("rotate-minus-45");
+  btn_nav_stroke_mid.classList.toggle("zero-width");
+  btn_nav_stroke_bottom.classList.toggle("rotate-45");
+  nav_container.classList.toggle("visually-hidden");
+});
+// #endregion
+
+// #region Mobile And Desktop Nav Toggle
+const header = document.querySelector("header");
+const header_banner = document.querySelector(".header-banner");
+const nav = document.querySelector(".nav");
+const div_btn_nav = document.getElementById("div-btn-nav");
+const mediaQuery = window.matchMedia("(min-width: 50em)");
+
+function handleWidthChange(e) {
+  if(e.matches) {
+    nav.classList.remove("nav-mobile");
+    nav.classList.remove("ff-ggb");
+    nav.classList.remove("fs-500");
+    div_btn_nav.classList.add("visually-hidden");
+    nav_container.classList.remove("nav-container");
+    nav_container.classList.remove("visually-hidden");
+    header_banner.appendChild(nav_container);
+
+  } else {
+    nav.classList.add("nav-mobile");
+    nav.classList.add("ff-ggb");
+    nav.classList.add("fs-500");
+    div_btn_nav.classList.remove("visually-hidden");
+    nav_container.classList.add("nav-container");
+    nav_container.classList.add("visually-hidden");
+    header.appendChild(nav_container);
+  }
+}
+
+mediaQuery.addEventListener("change", handleWidthChange);
+handleWidthChange(mediaQuery);
+
 // #endregion
 

@@ -13,7 +13,6 @@
   grid-template-columns: auto 5fr 2fr;
   grid-template-rows: 1fr auto auto;
   padding: 8vh var(--padding-left);
-  color: rgb(242, 242, 242);
 }
 
 .home > img {
