@@ -1,6 +1,5 @@
 
-/*--- Content ---*/
-
+/* #region HOME */
 .home {
   /*background-image: url("./images/home-background.jpg");*/
   background-color: rgb(48, 48, 48);
@@ -41,35 +40,37 @@
 
 .black-div-button {
   background-color: var(--cl-neutral-900);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   width: 24rem;
   height: 8rem;
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   line-height: 1.8rem;
   text-align: start;
 }
 
 .black-div-button p {
   min-width: 9rem;
+  line-height: 2.4rem;
   color: var(--cl-neutral-200);
-  margin: auto 0;
 }
 
-.black-div-button #arrow {
-  transition: transform 1s ease, opacity 1s ease;
-  transform: translateX(-100%);
+.black-div-button img {
+  width: 4.5rem;
+  height: 4.5rem;
+  transition: transform 0.7s ease, opacity 0.7s ease;
+  transform: translateX(-60%);
   opacity: 0;
 }
 
-.black-div-button:hover #arrow {
+.black-div-button:hover img {
   transform: translateX(0%);
   opacity: 1;
 }
+/* #endregion */
 
-/*--- About Us ---*/
-
+/* #region ABOUT US */
 .about-us {
   display: grid;
   grid-template-columns: 4fr 5fr;
@@ -89,6 +90,29 @@
 .about-us > div:last-child {
   background-color: black;
 }
+/* #endregion */
+
+/* #region SCROLL SLİDER */
+
+/* #endregion */
+
+/* #region SUCCESS STORİES */
+
+/* #endregion */
+
+/* #region REFERANCES */
+
+/* #endregion */
+
+/* #region BLOG LİNKS */
+
+/* #endregion */
+
+/* #region CONTACT */
+
+/* #endregion */
+
+
 
 /*--- Scroll Slider ---*/
 

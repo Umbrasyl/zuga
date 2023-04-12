@@ -231,9 +231,8 @@ a:visited {
 }
 
 .stroke-top,
-.stroke-mid,
+.stroke-mid,  
 .stroke-bottom {
-  transform-box: stroke-box;
   transform-origin: center;
 }
 
@@ -241,8 +240,8 @@ a:visited {
   transition: transform var(--animation-time);
 }
 
-.rotate-minus-45 {
-  transform: translateY(0.735rem) rotate(-45deg);
+.rotate-minus-45 {  
+  transform: translate(0.53rem, 0.53rem) rotate(-45deg);
 }
 
 .stroke-bottom {
@@ -250,7 +249,7 @@ a:visited {
 }
 
 .rotate-45 {
-  transform: translateY(-0.735rem) rotate(45deg);
+  transform: translate(0.53rem, -0.53rem) rotate(45deg);
 }
 
 .stroke-mid {
