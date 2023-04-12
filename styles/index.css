@@ -7,68 +7,54 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  align-items: end;
+  padding: 3rem 0;
+}
+
+.home-grid-first { grid-area: one; }
+.home-grid-second { grid-area: two; }
+.home-grid-third { grid-area: three; }
+
+.home-grid {
   display: grid;
-  grid-template-columns: auto 5fr 2fr;
-  grid-template-rows: 1fr auto auto;
-  padding: 8vh var(--padding-left);
+  grid-template-areas: 
+  "one"
+  "two"
+  "three";
+  row-gap: 3rem;
+  column-gap: calc(12vw);
+  justify-items: start;
+  align-items: center;
 }
 
-.home > img {
-  grid-column: 1 / 4;
-  grid-row: 1 / 4;
-}
-
-.home > p {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-  margin-bottom: 10vh;
-}
-
-.home .text-wrapper {
-  grid-column: 1 / 3;
-  grid-row: 3 / 4;
-}
-
-.invis-wrap {
-  width: 15vw;
-  height: 4vh;
-  float: right;
-}
-
-.home > a {
-  grid-column: 3 / 4;
-  grid-row: 3 / 4;
+@media screen and (min-width: 50em) {
+  .home-grid {
+    grid-template-areas: 
+    "one one"
+    "two three";
+  }
+  .home-grid-third {
+    justify-self: end;
+  }
 }
 
 .black-div-button {
-  background-color: rgb(0, 0, 0);
-  opacity: 0.6;
-  padding: 2vh 1.6vw;
-  width: 22vw;
-  height: 12vh;
-  font-weight: 300;
+  background-color: var(--cl-neutral-900);
+  padding: 0.5rem 1rem;
+  width: 24rem;
+  height: 8rem;
   display: flex;
   justify-content: space-between;
   align-content: center;
   line-height: 1.8rem;
+  text-align: start;
 }
 
-.black-div-button:hover {
-  opacity: 1;
-}
-
-.black-div-button > p {
-  width: 15ch;
+.black-div-button p {
+  min-width: 9rem;
   color: var(--cl-neutral-200);
   margin: auto 0;
-}
-
-svg {
-  width: 4vw;
-  height: auto;
-  overflow: visible;
 }
 
 .black-div-button #arrow {

@@ -104,7 +104,8 @@ function handleWidthChange(e) {
     nav.classList.remove("nav-mobile");
     // Remove the big and bold font
     nav.classList.remove("ff-ggb");
-    nav.classList.remove("fs-500");
+    nav.classList.remove("fs-600");
+    nav.classList.add("fs-400")
     // Hide the mobile nav button
     div_btn_nav.classList.add("visually-hidden");
     // Remove the full width and height nav menu
@@ -116,7 +117,8 @@ function handleWidthChange(e) {
   } else {
     nav.classList.add("nav-mobile");
     nav.classList.add("ff-ggb");
-    nav.classList.add("fs-500");
+    nav.classList.add("fs-600");
+    nav.classList.remove("fs-400")
     div_btn_nav.classList.remove("visually-hidden");
     nav_container.classList.add("nav-container");
     nav_container.classList.add("visually-hidden");
