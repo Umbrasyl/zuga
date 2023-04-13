@@ -130,11 +130,6 @@ button {
   flex-direction: column;
 }
 
-.full-width-flex-item {
-  width: 100%;
-  flex-shrink: 0;
-}
-
 /* #endregion */
 
 

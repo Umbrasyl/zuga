@@ -2,50 +2,6 @@
 const nav_container = document.getElementById("nav-container");
 
 // #region Horizontal Scroll Slider
-class slideCard {
-  constructor() {
-    
-  }
-}
-
-const slideScreen = document.querySelector(".slide-screen");
-const slideScreenWrapper = document.querySelector(".slide-screen-wrapper");
-const screenWrapperTop = getAbsoluteCoord(slideScreenWrapper).top;
-const screenWrapperHeight = getAbsoluteCoord(slideScreenWrapper).bottom - screenWrapperTop;
-const topOffsetArray = [];
-const cardsArray = [];
-const slideArray = [];
-for(let i = 0; i < 4; i++) {
-  topOffsetArray.push(screenWrapperTop + Math.floor((screenWrapperHeight / 4) * i));
-  cardsArray.push(document.querySelector(`[data-card-header='${i+1}']`));
-  slideArray.push(document.querySelector(`[data-card-slide='${i+1}']`));
-}
-const bringOnScreen = function(inputCardsArray, inputSlideArray, index) {
-  for (let i = 0; i < inputCardsArray.length; i++) {
-    if (i === index) {
-      inputCardsArray[i].classList.add("red-bar");
-      inputSlideArray[i].classList.add("visible");
-    } else {
-      inputCardsArray[i].classList.remove("red-bar");
-      inputSlideArray[i].classList.remove("visible");
-    }
-  }
-}
-
-window.addEventListener("scroll", swapCard);
-
-function swapCard() {
-  if (window.scrollY >= topOffsetArray[3]) {
-    bringOnScreen(cardsArray, slideArray, 3);
-  } else if (window.scrollY >= topOffsetArray[2]) {
-    bringOnScreen(cardsArray, slideArray, 2);
-  } else if (window.scrollY >= topOffsetArray[1]) {
-    bringOnScreen(cardsArray, slideArray, 1);
-  } else {
-    bringOnScreen(cardsArray, slideArray, 0);
-  }
-}
-
 function getAbsoluteCoord(ele) {
   const rect = ele.getBoundingClientRect();
   return {
@@ -54,6 +10,61 @@ function getAbsoluteCoord(ele) {
     bottom: rect.bottom + window.scrollY,
   };
 }
+
+class slideCard {
+  constructor(slideHeader, slideText) {
+    this.slideHeader = slideHeader;
+    this.slideText = slideText;
+  }
+}
+
+const slideScreenWrapper = document.querySelector(".slide-screen-wrapper");
+const screenWrapperTop = getAbsoluteCoord(slideScreenWrapper).top;
+const screenWrapperHeight = getAbsoluteCoord(slideScreenWrapper).bottom - screenWrapperTop;
+const topOffsetArray = [];
+const cardHeaderArray = [];
+const cardTextArray = [];
+for(let i = 0; i < 4; i++) {
+  // Screen Wrapper Height / 6 because after the 4 items whatever percentage of height is left should be 100vh. Right now
+  // the Screen Wrapper is 300vh. If we call the divider x then ((screenWrapperHeight / x) * (x-4)) should be 100vh.
+  topOffsetArray.push(screenWrapperTop + Math.floor((screenWrapperHeight / 6) * i));
+  cardHeaderArray.push(document.querySelector(`[data-card-header='${i+1}']`));
+  cardTextArray.push(document.querySelector(`[data-card-slide='${i+1}']`));
+}
+const bringOnScreen = function(inputCardHeaderArray, inputCardTextArray, index) {
+  for (let i = 0; i < inputCardHeaderArray.length; i++) {
+    if (i === index) {
+      inputCardHeaderArray[i].classList.add("red-bar");
+      inputCardTextArray[i].classList.remove("visually-hidden");
+    } else {
+      inputCardHeaderArray[i].classList.remove("red-bar");
+      inputCardTextArray[i].classList.add("visually-hidden");
+    }
+  }
+}
+
+window.addEventListener("scroll", swapCard);
+
+function swapCard() {
+  console.log(`Window Y coord position: ${window.scrollY}`);
+  console.log(`Top offset array 0: ${topOffsetArray[0]}`);
+  console.log(`Top offset array 1: ${topOffsetArray[1]}`);
+  console.log(`Top offset array 2: ${topOffsetArray[2]}`);
+  console.log(`Top offset array 3: ${topOffsetArray[3]}`);
+  console.log(`Screen wrapper top: ${screenWrapperTop}`);
+  console.log(`Screen wrapper bottom: ${getAbsoluteCoord(slideScreenWrapper).bottom}`);
+  if (window.scrollY >= topOffsetArray[3]) {
+    bringOnScreen(cardHeaderArray, cardTextArray, 3);
+  } else if (window.scrollY >= topOffsetArray[2]) {
+    bringOnScreen(cardHeaderArray, cardTextArray, 2);
+  } else if (window.scrollY >= topOffsetArray[1]) {
+    bringOnScreen(cardHeaderArray, cardTextArray, 1);
+  } else {
+    bringOnScreen(cardHeaderArray, cardTextArray, 0);
+  }
+}
+
+
 // #endregion
 
 // #region Right and Left Buttons sliding cards.
