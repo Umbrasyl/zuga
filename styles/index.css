@@ -11,11 +11,11 @@
   padding: 3rem 0;
 }
 
-.home-grid-first { grid-area: one; }
-.home-grid-second { grid-area: two; }
-.home-grid-third { grid-area: three; }
+.home-layout-first { grid-area: one; }
+.home-layout-second { grid-area: two; }
+.home-layout-third { grid-area: three; }
 
-.home-grid {
+.home-layout {
   display: grid;
   grid-template-areas: 
   "one"
@@ -28,12 +28,12 @@
 }
 
 @media screen and (min-width: 50em) {
-  .home-grid {
+  .home-layout {
     grid-template-areas: 
     "one one"
     "two three";
   }
-  .home-grid-third {
+  .home-layout-third {
     justify-self: end;
   }
 }
@@ -53,7 +53,6 @@
 .black-div-button p {
   min-width: 9rem;
   line-height: 2.4rem;
-  color: var(--cl-neutral-200);
 }
 
 .black-div-button img {
@@ -71,25 +70,38 @@
 /* #endregion */
 
 /* #region ABOUT US */
-.about-us {
+.au-left-column { grid-area: one; }
+.au-vid-column { grid-area: two; }
+
+.about-us-layout {
   display: grid;
-  grid-template-columns: 4fr 5fr;
-  padding: 16vh var(--padding-left);
-  gap: 6vw;
-  height: 100vh;
+  grid-template-areas: 
+  "one"
+  "two";
+  align-items: center;
+  height: 100%;
 }
 
-.about-us p:first-child {
-  color: red;
+@media screen and (min-width: 50em) {
+  .about-us-layout {
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    "one one two two two";
+  }
 }
 
-.about-us p:not(:last-child) {
-  margin-bottom: 8vh;
+.au-left-column {
+  justify-content: center;
+  gap: 2rem;
 }
 
-.about-us > div:last-child {
-  background-color: black;
+.au-vid-column {
+  margin: 0 auto;
+  background-color: var(--cl-neutral-900);
+  width: 45rem;
+  height: 30rem;
 }
+
 /* #endregion */
 
 /* #region SCROLL SLİDER */
