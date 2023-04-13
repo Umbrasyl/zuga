@@ -130,6 +130,11 @@ button {
   flex-direction: column;
 }
 
+.full-width-flex-item {
+  width: 100%;
+  flex-shrink: 0;
+}
+
 /* #endregion */
 
 
@@ -238,8 +243,12 @@ a:visited {
 
 .btn-nav,
 .btn-nav svg{
-  width: 6rem;
-  height: 6rem;
+  --btn-nav-width: 6rem;
+  --btn-nav-height: 6rem;
+  --btn-nav-translate-x: calc(var(--btn-nav-width) * 0.0883333333);
+  --btn-nav-translate-y: calc(var(--btn-nav-height) * 0.0883333333);
+  width: var(--btn-nav-width);
+  height: var(--btn-nav-height);
 }
 
 .btn-nav svg {
@@ -257,7 +266,7 @@ a:visited {
 }
 
 .rotate-minus-45 {  
-  transform: translate(0.53rem, 0.53rem) rotate(-45deg);
+  transform: translate(var(--btn-nav-translate-x), var(--btn-nav-translate-y)) rotate(-45deg);
 }
 
 .stroke-bottom {
@@ -265,7 +274,7 @@ a:visited {
 }
 
 .rotate-45 {
-  transform: translate(0.53rem, -0.53rem) rotate(45deg);
+  transform: translate(var(--btn-nav-translate-x), calc(-1 * var(--btn-nav-translate-y))) rotate(45deg);
 }
 
 .stroke-mid {

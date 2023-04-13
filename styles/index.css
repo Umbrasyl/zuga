@@ -105,6 +105,49 @@
 /* #endregion */
 
 /* #region SCROLL SLİDER */
+.slide-screen-wrapper {
+  height: 300vh;
+  position: relative;
+  background-color: var(--cl-neutral-900);
+}
+
+.slide-screen {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  color: var(--cl-neutral-200);
+  display: grid;
+  padding: 2rem 0;
+}
+
+.slide-header-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.slide-card-header {
+  flex: 1;
+  justify-content: center;
+  align-items: start;
+}
+
+.slide-card-bar {
+  margin-top: 4rem;
+  transition: background-color 0.5s ease;
+  width: 100%;
+  height: 0.3rem;
+  background-color: white;
+}
+
+.red-bar {
+  background-color: red;
+}
+
+.slide-card-text {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* #endregion */
 
@@ -128,72 +171,7 @@
 
 /*--- Scroll Slider ---*/
 
-.scroll-wrapper {
-  height: 200vh;
-  position: relative;
-}
 
-.scroll-slider {
-  position: sticky;
-  top: 0;
-  background-color: black;
-  height: 100vh;
-  color: var(--cl-neutral-200);
-  padding: 10vh var(--padding-left);
-  padding-top: 20vh;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 4fr 2fr 1fr;
-  column-gap: 0.8vw;
-}
-
-.slider-card > *:not(:last-child) {
-  margin-bottom: 3vh;
-}
-
-.slider-card {
-  height: 20vh;
-  position: relative;
-}
-
-.white-bar {
-  transition: all 0.5s ease;
-  width: 100%;
-  height: 1vh;
-  background-color: white;
-  position: absolute;
-  bottom: 0;
-}
-
-.red-bar {
-  background-color: red;
-}
-
-.scroll-slider > p:first-of-type {
-  font-weight: 600;
-  grid-row: 2 / 3;
-  grid-column: 1 / 3;
-}
-
-.info-text {
-  grid-column: 1 / 5;
-  grid-row: 2 / 4;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 4fr 1fr 1fr;
-  opacity: 0;
-  transition: all 1s ease;
-}
-
-.info-text>p:first-child {
-  grid-column: 1 / 4;
-  grid-row: 1 / 2;
-}
-
-.visible {
-  transition: all 1s ease;
-  opacity: 1;
-}
 
 /*--- Success Stories ---*/
 

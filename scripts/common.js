@@ -2,19 +2,25 @@
 const nav_container = document.getElementById("nav-container");
 
 // #region Horizontal Scroll Slider
-const scrollSlider = document.querySelector(".scroll-slider");
-const sliderContainer = document.querySelector(".scroll-wrapper");
-const sliderTop = getCoord(sliderContainer).top;
-const sliderHeight = getCoord(sliderContainer).bottom - sliderTop;
+class slideCard {
+  constructor() {
+    
+  }
+}
+
+const slideScreen = document.querySelector(".slide-screen");
+const slideScreenWrapper = document.querySelector(".slide-screen-wrapper");
+const screenWrapperTop = getAbsoluteCoord(slideScreenWrapper).top;
+const screenWrapperHeight = getAbsoluteCoord(slideScreenWrapper).bottom - screenWrapperTop;
 const topOffsetArray = [];
 const cardsArray = [];
 const slideArray = [];
 for(let i = 0; i < 4; i++) {
-  topOffsetArray.push(sliderTop + Math.floor((sliderHeight / 4) * i * 0.5));
-  cardsArray.push(document.querySelector(`[data-card='${i+1}']`));
-  slideArray.push(document.querySelector(`[data-slide='${i+1}']`));
+  topOffsetArray.push(screenWrapperTop + Math.floor((screenWrapperHeight / 4) * i));
+  cardsArray.push(document.querySelector(`[data-card-header='${i+1}']`));
+  slideArray.push(document.querySelector(`[data-card-slide='${i+1}']`));
 }
-const horizontalSlide = function(inputCardsArray, inputSlideArray, index) {
+const bringOnScreen = function(inputCardsArray, inputSlideArray, index) {
   for (let i = 0; i < inputCardsArray.length; i++) {
     if (i === index) {
       inputCardsArray[i].classList.add("red-bar");
@@ -30,17 +36,17 @@ window.addEventListener("scroll", swapCard);
 
 function swapCard() {
   if (window.scrollY >= topOffsetArray[3]) {
-    horizontalSlide(cardsArray, slideArray, 3);
+    bringOnScreen(cardsArray, slideArray, 3);
   } else if (window.scrollY >= topOffsetArray[2]) {
-    horizontalSlide(cardsArray, slideArray, 2);
+    bringOnScreen(cardsArray, slideArray, 2);
   } else if (window.scrollY >= topOffsetArray[1]) {
-    horizontalSlide(cardsArray, slideArray, 1);
+    bringOnScreen(cardsArray, slideArray, 1);
   } else {
-    horizontalSlide(cardsArray, slideArray, 0);
+    bringOnScreen(cardsArray, slideArray, 0);
   }
 }
 
-function getCoord(ele) {
+function getAbsoluteCoord(ele) {
   const rect = ele.getBoundingClientRect();
   return {
     left: rect.left + window.scrollX,
