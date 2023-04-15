@@ -1,5 +1,6 @@
 "use strict";
 const nav_container = document.getElementById("nav-container");
+const mediaQuery = window.matchMedia("(min-width: 50em)");
 
 // #region Mobile Nav Close Button Animation
 const btn_nav = document.getElementById("btn-nav");
@@ -19,7 +20,6 @@ const header = document.querySelector("header");
 const header_banner = document.querySelector(".header-banner");
 const nav = document.querySelector(".nav");
 const div_btn_nav = document.getElementById("div-btn-nav");
-const mediaQuery = window.matchMedia("(min-width: 50em)");
 
 function handleWidthChange(e) {
   if(e.matches) {

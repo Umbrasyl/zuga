@@ -191,7 +191,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .success-stories-hero {
@@ -211,6 +211,10 @@
   text-align: center;
 }
 
+.left-button img {
+  transform: scaleX(-1);
+}
+
 .left-button:hover,
 .right-button:hover {
   background-color: rgb(202, 202, 202);
@@ -219,13 +223,6 @@
 .arrow-buttons {
   display: flex;
   gap: 0.4rem;
-}
-
-.story-card {
-  background-color: gray;
-  height: 32rem;
-  width: var(--card-width);
-  flex: 0 0 auto;
 }
 
 .card-screen {
@@ -240,7 +237,7 @@
 }
 
 .card-grid {
-  --card-width: 24rem;
+  --card-width: 18rem;
   margin: 1rem 0;
   transition: all 0.6s ease;
   width: calc(var(--card-width) * 8);
@@ -249,9 +246,46 @@
   justify-content: center;
 }
 
+.story-card {
+  background-color: gray;
+  height: 24rem;
+  width: var(--card-width);
+}
+
 /* #endregion */
 
 /* #region REFERANCES */
+.referances {
+  padding: 8rem;
+  overflow-x: hidden;
+  --carousel-width: 300rem;
+}
+
+@keyframes carousel {
+  from {
+    left: 0rem;
+  }
+  to {
+    left: calc(-1 * (var(--carousel-width) / 2));
+  }
+}
+
+.brand-scroll {
+  margin-left: -5vw;
+  width: 300rem;
+  height: 16rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  animation: carousel 25s linear infinite;
+}
+
+.brand-scroll > img {
+  width: 6rem;
+  height: 6rem;
+}
 
 /* #endregion */
 
@@ -266,50 +300,6 @@
 
 /*--- References ---*/
 
-.referances {
-  margin-top: 6vh;
-  padding: 6vh var(--padding-left);
-  overflow-x: hidden;
-}
-
-.referances > p {
-  margin-bottom: 6vh;
-}
-
-@keyframes carousel {
-  from {
-    left: 0px;
-  }
-  to {
-    left: -100vw;
-  }
-}
-
-.brand-scroll {
-  margin-left: calc(-1 * var(--padding-left));
-  margin-bottom: 6vh;
-  width: 200vw;
-  height: 25vh;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  position: relative;
-  animation: carousel 15s linear infinite;
-}
-
-.brand-scroll > img {
-  width: 5vw;
-  height: 5vw;
-}
-
-.button-holder > a > div {
-  opacity: 0.8;
-}
-
-.referances > .button-holder {
-  justify-content: center;
-}
 
 /*--- Blog ---*/
 

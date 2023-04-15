@@ -51,16 +51,33 @@ function swapCard() {
 
 // #endregion
 
+// #region Hide Left and Right Arrows on Mobile
+const buttonsDiv = document.querySelector(".arrow-buttons");
+
+function hideArrows(e) {
+  if (e.matches) {
+    buttonsDiv.classList.remove("visually-hidden");
+  } else {
+    buttonsDiv.classList.add("visually-hidden");
+  }
+}
+
+mediaQuery.addEventListener("change", hideArrows);
+hideArrows(mediaQuery);
+
+// #endregion
+
 // #region Right and Left Buttons sliding cards.
 const leftButton = document.querySelector(".left-button");
 const rightButton = document.querySelector(".right-button");
 const cardScreen = document.querySelector(".card-screen");
+const cardWidth = document.querySelector(".story-card").offsetWidth;
 
 leftButton.addEventListener("click", () => {
-  smoothScrollTo(cardScreen, -260, 1000);
+  smoothScrollTo(cardScreen, -2 * cardWidth, 1000);
 });
 rightButton.addEventListener("click", () => {
-  smoothScrollTo(cardScreen, 260, 1000);
+  smoothScrollTo(cardScreen, 2 * cardWidth, 1000);
 });
 
 function smoothScrollTo(element, scrollAmount, duration) {
@@ -90,3 +107,4 @@ Math.easeInOutQuad = function (t, b, c, d) {
 };
 
 // #endregion
+
