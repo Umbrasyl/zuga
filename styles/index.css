@@ -229,13 +229,19 @@
 }
 
 .card-screen {
-  height: 32rem;
   width: 100%;
   overflow-x: scroll;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.card-screen::-webkit-scrollbar {
+  display: none;
 }
 
 .card-grid {
   --card-width: 24rem;
+  margin: 1rem 0;
   transition: all 0.6s ease;
   width: calc(var(--card-width) * 8);
   display: flex;

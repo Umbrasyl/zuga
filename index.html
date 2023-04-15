@@ -1,49 +1,219 @@
 <!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zuga</title>
-    <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/index.css" />
-    <script src="./scripts/common.js" defer></script>
-  </head>
-  <body class="ff-ggl fs-200">
-    <header>
-      <div class="header-banner text-color-white">
-        <img class="logo" src="" alt="Zuga Dijital Reklam Ajansı'nın Logosu" />
-        <div id="div-btn-nav">
-          <button class="btn-nav" id="btn-nav">
-            <?xml version="1.0" encoding="utf-8"?>
-            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="stroke-bottom" d="M4 18L20 18" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
-              <path class="stroke-mid" d="M4 12L20 12" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
-              <path class="stroke-top" d="M4 6L20 6" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
-            </svg>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zuga</title>
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/index.css" />
+  <script src="./scripts/common.js" defer></script>
+  <script src="./scripts/index.js" defer></script>
+</head>
+<body class="ff-ggl fs-200">
+  <header>
+    <div class="header-banner text-color-white">
+      <img class="logo" src="" alt="Zuga Dijital Reklam Ajansı'nın Logosu" />
+      <div id="div-btn-nav">
+        <button class="btn-nav" id="btn-nav">
+          <?xml version="1.0" encoding="utf-8"?>
+          <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="stroke-bottom" d="M4 18L20 18" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+            <path class="stroke-mid" d="M4 12L20 12" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+            <path class="stroke-top" d="M4 6L20 6" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="nav-container" class="visually-hidden animate-width nav-container">
+      <nav id="navigation" aria-label="Main Menu">
+        <ul role="list" class="nav ff-ggb fs-500 link-hover-red nav-mobile">
+          <li><a href="">Projeler</a></li>
+          <li><a href="">Hizmetler</a></li>
+          <li><a href="">Hakkımızda</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="home full-screen">
+      <div class="width-wrapper home-layout">
+        <h2 class="home-layout-first fs-500">MERHABA</h2>
+        <p class="home-layout-second fs-800">
+          Biz Özgün İçerikler Üreten, Performans Odaklı Reklam Ajansıyız.
+        </p>
+        <a href="" class="home-layout-third">
+          <button class="black-div-button fs-500 text-color-white">
+            <p class="">BAŞARI HİKAYELERİMİZ</p>
+            <img src="./assets/svgs/right-arrow.svg">
           </button>
+        </a>
+      </div>
+    </div>
+    <div class="about-us full-screen">
+      <div class="width-wrapper about-us-layout">
+        <div class="au-left-column flex-column text-color-black">
+          <h2 class="text-color-red fs-500">HAKKIMIZDA</h2>
+          <p class="fs-600">
+            Biz 20 kişilik kreatif bir ekiple 350'den fazla markanın yol
+            arkadaşıyız.
+          </p>
+          <p class="fs-400">
+            2018 yılından beri yurtiçinde ve yurtdışında markaların dijital
+            dönüşümlerine ve pazarlama stratejilerine destek olan, iletişim
+            odaklı bir ekibiz.
+          </p>
+        </div>
+        <div class="au-vid-column">
+          <!--Put the Video Here!-->
         </div>
       </div>
-      <div id="nav-container" class="visually-hidden animate-width nav-container">
-        <nav id="navigation" aria-label="Main Menu">
-          <ul role="list" class="nav ff-ggb fs-500 link-hover-red nav-mobile">
-            <li><a href="">Projeler</a></li>
-            <li><a href="">Hizmetler</a></li>
-            <li><a href="">Hakkımızda</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">İletişim</a></li>
-          </ul>
-        </nav>
+    </div>
+    <div class="slide-screen-wrapper full-screen">
+      <div class="slide-screen width-wrapper">
+        <div class="slide-header-container">
+          <div class="slide-card-header flex-column">
+            <h2 class="fs-600">Strateji</h2>
+            <p class="fs-300">Marka hedeflerinizin uygulanabilir adımlara dönüşümü</p>
+            <div class="slide-card-bar" data-card-header="1"></div>
+          </div>
+          <div class="slide-card-header flex-column">
+            <h2 class="fs-600">Kreatif</h2>
+            <p class="fs-300">Harekete geçiren kullanıcı deneyimleri</p>
+            <div class="slide-card-bar" data-card-header="2"></div>
+          </div>
+          <div class="slide-card-header flex-column">
+            <h2 class="fs-600">Reklam</h2>
+            <p class="fs-300">Sonuç veren dijital pazarlama</p>
+            <div class="slide-card-bar" data-card-header="3"></div>
+          </div>
+          <div class="slide-card-header flex-column">
+            <h2 class="fs-600">Web</h2>
+            <p class="fs-300">Duyarlı, modüler, ölçeklenebilir dijital ürünler</p>
+            <div class="slide-card-bar" data-card-header="4"></div>
+          </div>
+        </div>
+        <div class="slide-card-text fs-500" data-card-slide="1">
+          <p class="fs-900">Dijital Strateji</p>
+          <p>Markalama</p>
+          <p>Rakip Analizi</p>
+          <p>Hedef Belirleme</p>
+          <p>Marka Pozisyonlama</p>
+          <p>Bütçe Planlama</p>
+          <p>Pazarlama Entegrasyonları</p>
+        </div>
+        <div class="slide-card-text fs-500 visually-hidden" data-card-slide="2">
+          <p class="fs-900">2. Slayt</p>
+          <p>Markalama</p>
+          <p>Rakip Analizi</p>
+          <p>Hedef Belirleme</p>
+          <p>Marka Pozisyonlama</p>
+          <p>Bütçe Planlama</p>
+          <p>Pazarlama Entegrasyonları</p>
+        </div>
+        <div class="slide-card-text fs-500 visually-hidden" data-card-slide="3">
+          <p class="fs-900">3. Slayt</p>
+          <p>Markalama</p>
+          <p>Rakip Analizi</p>
+          <p>Hedef Belirleme</p>
+          <p>Marka Pozisyonlama</p>
+          <p>Bütçe Planlama</p>
+          <p>Pazarlama Entegrasyonları</p>
+        </div>
+        <div class="slide-card-text fs-500 visually-hidden" data-card-slide="4">
+          <p class="fs-900">4. Slayt</p>
+          <p>Markalama</p>
+          <p>Rakip Analizi</p>
+          <p>Hedef Belirleme</p>
+          <p>Marka Pozisyonlama</p>
+          <p>Bütçe Planlama</p>
+          <p>Pazarlama Entegrasyonları</p>
+        </div>
       </div>
-    </header>
-    <main>
-      <div class="home full-screen">
-        <div class="width-wrapper home-layout">
-          <h2 class="home-layout-first fs-500">MERHABA</h2>
-          <p class="home-layout-second fs-800">
-            Biz Özgün İçerikler Üreten, Performans Odaklı Reklam Ajansıyız.
-          </p>
-          <a href="" class="home-layout-third">
+    </div>
+    <div class="success-stories full-screen">
+      <div class="success-stories-layout">
+        <div class="success-stories-hero text-color-black">
+          <div class="success-stories-text">
+            <p class="fs-500 text-color-red">BAŞARI HİKAYELERİ</p>
+            <p class="fs-600">
+              Biz 20 kişilik kreatif bir ekiple 350'den fazla markanın yol
+              arkadaşıyız.
+            </p>
+          </div>
+          <div class="arrow-buttons">
+            <button type="button" class="left-button">
+              <img src="./assets/svgs/right-arrow-black.svg">
+            </button>
+            <button type="button" class="right-button">
+              <img src="./assets/svgs/right-arrow-black.svg">
+            </button>
+          </div>
+        </div>
+        <div class="card-screen">
+          <div class="card-grid">
+            <a href="">
+              <div class="story-card">
+                <img src="" alt="Herhangi bir marka" />
+                <p>Bosphorus Expo</p>
+                <p>Yazı yazı yazı yazı</p>
+                <p>Merhaba merhaba merhaba</p>
+              </div>
+            </a>
+            <a href="">
+              <div class="story-card">
+                <img src="" alt="Herhangi bir marka" />
+                <p>Bosphorus Expo</p>
+                <p>Yazı yazı yazı yazı</p>
+                <p>Merhaba merhaba merhaba</p>
+              </div>
+            </a>
+            <a href="">
+              <div class="story-card">
+                <img src="" alt="Herhangi bir marka" />
+                <p>Bosphorus Expo</p>
+                <p>Yazı yazı yazı yazı</p>
+                <p>Merhaba merhaba merhaba</p>
+              </div>
+            </a>
+            <a href="">
+              <div class="story-card">
+                <img src="" alt="Herhangi bir marka" />
+                <p>Bosphorus Expo</p>
+                <p>Yazı yazı yazı yazı</p>
+                <p>Merhaba merhaba merhaba</p>
+              </div>
+            </a>
+            <a href="">
+              <div class="story-card">
+                <img src="" alt="Herhangi bir marka" />
+                <p>Bosphorus Expo</p>
+                <p>Yazı yazı yazı yazı</p>
+                <p>Merhaba merhaba merhaba</p>
+              </div>
+            </a>
+            <a href="">
+              <div class="story-card">
+                <img src="" alt="Herhangi bir marka" />
+                <p>Bosphorus Expo</p>
+                <p>Yazı yazı yazı yazı</p>
+                <p>Merhaba merhaba merhaba</p>
+              </div>
+            </a>
+            <a href="">
+              <div class="story-card">
+                <img src="" alt="Herhangi bir marka" />
+                <p>Bosphorus Expo</p>
+                <p>Yazı yazı yazı yazı</p>
+                <p>Merhaba merhaba merhaba</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="button-holder">
+          <a href="">
             <button class="black-div-button fs-500 text-color-white">
               <p class="">BAŞARI HİKAYELERİMİZ</p>
               <img src="./assets/svgs/right-arrow.svg">
@@ -51,255 +221,86 @@
           </a>
         </div>
       </div>
-      <div class="about-us full-screen">
-        <div class="width-wrapper about-us-layout">
-          <div class="au-left-column flex-column text-color-black">
-            <h2 class="text-color-red fs-500">HAKKIMIZDA</h2>
-            <p class="fs-600">
-              Biz 20 kişilik kreatif bir ekiple 350'den fazla markanın yol
-              arkadaşıyız.
-            </p>
-            <p class="fs-400">
-              2018 yılından beri yurtiçinde ve yurtdışında markaların dijital
-              dönüşümlerine ve pazarlama stratejilerine destek olan, iletişim
-              odaklı bir ekibiz.
-            </p>
-          </div>
-          <div class="au-vid-column">
-            <!--Put the Video Here!-->
-          </div>
-        </div>
+    </div>
+    <div class="referances">
+      <p class="h4">REFERANSLAR</p>
+      <div class="brand-scroll">
+        <img src="./svgs/airbnb.svg" alt="">
+        <img src="./svgs/alertus.svg" alt="">
+        <img src="./svgs/alexa.svg" alt="">
+        <img src="./svgs/apple.svg" alt="">
+        <img src="./svgs/cbs.svg" alt="">
+        <img src="./svgs/duolingo.svg" alt="">
+        <img src="./svgs/honda.svg" alt="">
+        <img src="./svgs/huawei.svg" alt="">
+        <img src="./svgs/airbnb.svg" alt="">
+        <img src="./svgs/alertus.svg" alt="">
+        <img src="./svgs/alexa.svg" alt="">
+        <img src="./svgs/apple.svg" alt="">
+        <img src="./svgs/cbs.svg" alt="">
+        <img src="./svgs/duolingo.svg" alt="">
+        <img src="./svgs/honda.svg" alt="">
+        <img src="./svgs/huawei.svg" alt="">
+        <!-- brands will be here -->
       </div>
-      <div class="slide-screen-wrapper full-screen">
-        <div class="slide-screen width-wrapper">
-          <div class="slide-header-container">
-            <div class="slide-card-header flex-column">
-              <h2 class="fs-600">Strateji</h2>
-              <p class="fs-300">Marka hedeflerinizin uygulanabilir adımlara dönüşümü</p>
-              <div class="slide-card-bar" data-card-header="1"></div>
-            </div>
-            <div class="slide-card-header flex-column">
-              <h2 class="fs-600">Kreatif</h2>
-              <p class="fs-300">Harekete geçiren kullanıcı deneyimleri</p>
-              <div class="slide-card-bar" data-card-header="2"></div>
-            </div>
-            <div class="slide-card-header flex-column">
-              <h2 class="fs-600">Reklam</h2>
-              <p class="fs-300">Sonuç veren dijital pazarlama</p>
-              <div class="slide-card-bar" data-card-header="3"></div>
-            </div>
-            <div class="slide-card-header flex-column">
-              <h2 class="fs-600">Web</h2>
-              <p class="fs-300">Duyarlı, modüler, ölçeklenebilir dijital ürünler</p>
-              <div class="slide-card-bar" data-card-header="4"></div>
-            </div>
-          </div>
-          <div class="slide-card-text fs-500" data-card-slide="1">
-            <p class="fs-900">Dijital Strateji</p>
-            <p>Markalama</p>
-            <p>Rakip Analizi</p>
-            <p>Hedef Belirleme</p>
-            <p>Marka Pozisyonlama</p>
-            <p>Bütçe Planlama</p>
-            <p>Pazarlama Entegrasyonları</p>
-          </div>
-          <div class="slide-card-text fs-500 visually-hidden" data-card-slide="2">
-            <p class="fs-900">2. Slayt</p>
-            <p>Markalama</p>
-            <p>Rakip Analizi</p>
-            <p>Hedef Belirleme</p>
-            <p>Marka Pozisyonlama</p>
-            <p>Bütçe Planlama</p>
-            <p>Pazarlama Entegrasyonları</p>
-          </div>
-          <div class="slide-card-text fs-500 visually-hidden" data-card-slide="3">
-            <p class="fs-900">3. Slayt</p>
-            <p>Markalama</p>
-            <p>Rakip Analizi</p>
-            <p>Hedef Belirleme</p>
-            <p>Marka Pozisyonlama</p>
-            <p>Bütçe Planlama</p>
-            <p>Pazarlama Entegrasyonları</p>
-          </div>
-          <div class="slide-card-text fs-500 visually-hidden" data-card-slide="4">
-            <p class="fs-900">4. Slayt</p>
-            <p>Markalama</p>
-            <p>Rakip Analizi</p>
-            <p>Hedef Belirleme</p>
-            <p>Marka Pozisyonlama</p>
-            <p>Bütçe Planlama</p>
-            <p>Pazarlama Entegrasyonları</p>
-          </div>
-        </div>
+      <div class="button-holder">
+        <a href="">
+          <button class="black-div-button fs-500 text-color-white">
+            <p class="">İLETİŞİM</p>
+            <img src="./assets/svgs/right-arrow.svg">
+          </button>
+        </a>
       </div>
-      <div class="success-stories full-screen">
-        <div class="success-stories-layout">
-          <div class="success-stories-hero text-color-black">
-            <div class="success-stories-text">
-              <p class="fs-500 text-color-red">BAŞARI HİKAYELERİ</p>
-              <p class="fs-600">
-                Biz 20 kişilik kreatif bir ekiple 350'den fazla markanın yol
-                arkadaşıyız.
-              </p>
-            </div>
-            <div class="arrow-buttons">
-              <button type="button" class="left-button">
-                <img src="./assets/svgs/right-arrow-black.svg">
-              </button>
-              <button type="button" class="right-button">
-                <img src="./assets/svgs/right-arrow-black.svg">
-              </button>
-            </div>
+    </div>
+    <div class="blog-links">
+      <p class="h3">BLOG</p>
+      <div class="blog-card-holder">
+        <a href="">
+          <div class="blog-card">
+            <img src="" alt="Herhangi bir marka" />
+            <p>15 Haziran 2022</p>
+            <p>Metaverse Hayatımızı Nasıl Değiştirecek?</p>
           </div>
-          <div class="card-screen">
-            <div class="card-grid">
-              <a href="">
-                <div class="story-card">
-                  <img src="" alt="Herhangi bir marka" />
-                  <p>Bosphorus Expo</p>
-                  <p>Yazı yazı yazı yazı</p>
-                  <p>Merhaba merhaba merhaba</p>
-                </div>
-              </a>
-              <a href="">
-                <div class="story-card">
-                  <img src="" alt="Herhangi bir marka" />
-                  <p>Bosphorus Expo</p>
-                  <p>Yazı yazı yazı yazı</p>
-                  <p>Merhaba merhaba merhaba</p>
-                </div>
-              </a>
-              <a href="">
-                <div class="story-card">
-                  <img src="" alt="Herhangi bir marka" />
-                  <p>Bosphorus Expo</p>
-                  <p>Yazı yazı yazı yazı</p>
-                  <p>Merhaba merhaba merhaba</p>
-                </div>
-              </a>
-              <a href="">
-                <div class="story-card">
-                  <img src="" alt="Herhangi bir marka" />
-                  <p>Bosphorus Expo</p>
-                  <p>Yazı yazı yazı yazı</p>
-                  <p>Merhaba merhaba merhaba</p>
-                </div>
-              </a>
-              <a href="">
-                <div class="story-card">
-                  <img src="" alt="Herhangi bir marka" />
-                  <p>Bosphorus Expo</p>
-                  <p>Yazı yazı yazı yazı</p>
-                  <p>Merhaba merhaba merhaba</p>
-                </div>
-              </a>
-              <a href="">
-                <div class="story-card">
-                  <img src="" alt="Herhangi bir marka" />
-                  <p>Bosphorus Expo</p>
-                  <p>Yazı yazı yazı yazı</p>
-                  <p>Merhaba merhaba merhaba</p>
-                </div>
-              </a>
-              <a href="">
-                <div class="story-card">
-                  <img src="" alt="Herhangi bir marka" />
-                  <p>Bosphorus Expo</p>
-                  <p>Yazı yazı yazı yazı</p>
-                  <p>Merhaba merhaba merhaba</p>
-                </div>
-              </a>
-            </div>
+        </a>
+        <a href="">
+          <div class="blog-card">
+            <img src="" alt="Herhangi bir marka" />
+            <p>15 Haziran 2022</p>
+            <p>Metaverse Hayatımızı Nasıl Değiştirecek?</p>
           </div>
-          <div class="button-holder">
-            <a href="">
-              <button class="black-div-button fs-500 text-color-white">
-                <p class="">BAŞARI HİKAYELERİMİZ</p>
-                <img src="./assets/svgs/right-arrow.svg">
-              </button>
-            </a>
+        </a>
+        <a href="">
+          <div class="blog-card">
+            <img src="" alt="Herhangi bir marka" />
+            <p>15 Haziran 2022</p>
+            <p>Metaverse Hayatımızı Nasıl Değiştirecek?</p>
           </div>
-        </div>
+        </a>
       </div>
-      <div class="referances">
-        <p class="h4">REFERANSLAR</p>
-        <div class="brand-scroll">
-          <img src="./svgs/airbnb.svg" alt="">
-          <img src="./svgs/alertus.svg" alt="">
-          <img src="./svgs/alexa.svg" alt="">
-          <img src="./svgs/apple.svg" alt="">
-          <img src="./svgs/cbs.svg" alt="">
-          <img src="./svgs/duolingo.svg" alt="">
-          <img src="./svgs/honda.svg" alt="">
-          <img src="./svgs/huawei.svg" alt="">
-          <img src="./svgs/airbnb.svg" alt="">
-          <img src="./svgs/alertus.svg" alt="">
-          <img src="./svgs/alexa.svg" alt="">
-          <img src="./svgs/apple.svg" alt="">
-          <img src="./svgs/cbs.svg" alt="">
-          <img src="./svgs/duolingo.svg" alt="">
-          <img src="./svgs/honda.svg" alt="">
-          <img src="./svgs/huawei.svg" alt="">
-          <!-- brands will be here -->
-        </div>
-        <div class="button-holder">
-          <a href="">
-            <button class="black-div-button fs-500 text-color-white">
-              <p class="">İLETİŞİM</p>
-              <img src="./assets/svgs/right-arrow.svg">
-            </button>
-          </a>
-        </div>
-      </div>
-      <div class="blog-links">
-        <p class="h3">BLOG</p>
-        <div class="blog-card-holder">
-          <a href="">
-            <div class="blog-card">
-              <img src="" alt="Herhangi bir marka" />
-              <p>15 Haziran 2022</p>
-              <p>Metaverse Hayatımızı Nasıl Değiştirecek?</p>
-            </div>
-          </a>
-          <a href="">
-            <div class="blog-card">
-              <img src="" alt="Herhangi bir marka" />
-              <p>15 Haziran 2022</p>
-              <p>Metaverse Hayatımızı Nasıl Değiştirecek?</p>
-            </div>
-          </a>
-          <a href="">
-            <div class="blog-card">
-              <img src="" alt="Herhangi bir marka" />
-              <p>15 Haziran 2022</p>
-              <p>Metaverse Hayatımızı Nasıl Değiştirecek?</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="contact">
-        <p class="h3">Bizimle iletişime geçin</p>
-        <p>Verdiğiniz bilgileri sizinle iletişime geçmek için kullanacağız.</p>
-        <form action="post" class="contact-form">
-          <input type="text" placeholder="Ad Soyad" id="name" />
-          <input type="text" placeholder="Marka Adı" id="brand" />
-          <input type="text" placeholder="Telefon Numarası" id="number" />
-          <input type="text" placeholder="E-Posta" id="email" />
-          <div class="third-row-holder">
-            <div class="checkbox-holder">
-              <input type="checkbox" name="terms" id="terms" />
-              <label for="terms" class="h5"
-                ><a href="">KVKK Aydınlatma Metni</a>'ni okudum ve kabul
-                ediyorum.</label
-              >
-            </div>
-            <button type="submit">Gönder</button>
+    </div>
+    <div class="contact">
+      <p class="h3">Bizimle iletişime geçin</p>
+      <p>Verdiğiniz bilgileri sizinle iletişime geçmek için kullanacağız.</p>
+      <form action="post" class="contact-form">
+        <input type="text" placeholder="Ad Soyad" id="name" />
+        <input type="text" placeholder="Marka Adı" id="brand" />
+        <input type="text" placeholder="Telefon Numarası" id="number" />
+        <input type="text" placeholder="E-Posta" id="email" />
+        <div class="third-row-holder">
+          <div class="checkbox-holder">
+            <input type="checkbox" name="terms" id="terms" />
+            <label for="terms" class="h5"
+              ><a href="">KVKK Aydınlatma Metni</a>'ni okudum ve kabul
+              ediyorum.</label
+            >
           </div>
-        </form>
-      </div>
-    </main>
-    <footer>
+          <button type="submit">Gönder</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer>
 
-    </footer>
-  </body>
+  </footer>
+</body>
 </html>
