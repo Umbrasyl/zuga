@@ -11,13 +11,6 @@ function getAbsoluteCoord(ele) {
   };
 }
 
-class slideCard {
-  constructor(slideHeader, slideText) {
-    this.slideHeader = slideHeader;
-    this.slideText = slideText;
-  }
-}
-
 const slideScreenWrapper = document.querySelector(".slide-screen-wrapper");
 const screenWrapperTop = getAbsoluteCoord(slideScreenWrapper).top;
 const screenWrapperHeight = getAbsoluteCoord(slideScreenWrapper).bottom - screenWrapperTop;
@@ -25,9 +18,9 @@ const topOffsetArray = [];
 const cardHeaderArray = [];
 const cardTextArray = [];
 for(let i = 0; i < 4; i++) {
-  // Screen Wrapper Height / 6 because after the 4 items whatever percentage of height is left should be 100vh. Right now
-  // the Screen Wrapper is 300vh. If we call the divider x then ((screenWrapperHeight / x) * (x-4)) should be 100vh.
-  topOffsetArray.push(screenWrapperTop + Math.floor((screenWrapperHeight / 6) * i));
+  // Screen Wrapper Height / 6.5 because after the 4 items whatever percentage of height is left should be 100vh. Right now
+  // the Screen Wrapper is 260vh. If we call the divider x then ((screenWrapperHeight / x) * (x-4)) should be 100vh.
+  topOffsetArray.push(screenWrapperTop + Math.floor((screenWrapperHeight / 6.5) * i));
   cardHeaderArray.push(document.querySelector(`[data-card-header='${i+1}']`));
   cardTextArray.push(document.querySelector(`[data-card-slide='${i+1}']`));
 }
@@ -46,13 +39,6 @@ const bringOnScreen = function(inputCardHeaderArray, inputCardTextArray, index) 
 window.addEventListener("scroll", swapCard);
 
 function swapCard() {
-  console.log(`Window Y coord position: ${window.scrollY}`);
-  console.log(`Top offset array 0: ${topOffsetArray[0]}`);
-  console.log(`Top offset array 1: ${topOffsetArray[1]}`);
-  console.log(`Top offset array 2: ${topOffsetArray[2]}`);
-  console.log(`Top offset array 3: ${topOffsetArray[3]}`);
-  console.log(`Screen wrapper top: ${screenWrapperTop}`);
-  console.log(`Screen wrapper bottom: ${getAbsoluteCoord(slideScreenWrapper).bottom}`);
   if (window.scrollY >= topOffsetArray[3]) {
     bringOnScreen(cardHeaderArray, cardTextArray, 3);
   } else if (window.scrollY >= topOffsetArray[2]) {
@@ -80,17 +66,18 @@ rightButton.addEventListener("click", () => {
 });
 
 const moveCardsHorizontally = function(ele, direction) {
+  console.log("used");
   const currentXStr = ele.style.transform;
   let currentX = +currentXStr.replace(/[^-?\d.]/g, '');
   console.log(currentX);
   const amount = direction * 15;
+  if (currentX <= -90 && direction === -1) {
+    currentX = 15;
+  } else if (currentX >= 0 && direction === 1) {
+    currentX = -105;
+  }
   currentX += amount;
   console.log(currentX);
-  if (currentX < -45) {
-    currentX = 15;
-  } else if (currentX > 20) {
-    currentX = -45;
-  }
   ele.style.transform = `translateX(${currentX}vw)`;
 }
 // #endregion

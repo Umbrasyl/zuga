@@ -106,7 +106,7 @@
 
 /* #region SCROLL SLİDER */
 .slide-screen-wrapper {
-  min-height: 300vh;
+  min-height: 260vh;
   position: relative;
   background-color: var(--cl-neutral-900);
 }
@@ -180,6 +180,68 @@
 /* #endregion */
 
 /* #region SUCCESS STORİES */
+.success-stories {
+  display: flex;
+  align-items: center;
+}
+
+.success-stories-layout {
+  width: 95%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.success-stories-hero {
+  display: flex;
+  gap: 20rem;
+  padding-right: 8rem;
+  align-items: end;
+}
+
+.left-button,
+.right-button {
+  background-color: white;
+  border: 0;
+  width: 3rem;
+  height: 4.5rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.left-button:hover,
+.right-button:hover {
+  background-color: rgb(202, 202, 202);
+}
+
+.arrow-buttons {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.story-card {
+  background-color: gray;
+  height: 32rem;
+  width: var(--card-width);
+  flex: 0 0 auto;
+}
+
+.card-screen {
+  height: 32rem;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.card-grid {
+  --card-width: 24rem;
+  transition: all 0.6s ease;
+  width: calc(var(--card-width) * 8);
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
 
 /* #endregion */
 
@@ -195,81 +257,6 @@
 
 /* #endregion */
 
-
-
-/*--- Scroll Slider ---*/
-
-
-
-/*--- Success Stories ---*/
-
-.success-stories {
-  height: 100vh;
-  padding: 14vh 0 0 var(--padding-left);
-  display: grid;
-  grid-template-rows: repeat(4, auto);
-  grid-auto-flow: column;
-}
-
-.success-stories > p {
-  width: 30ch;
-}
-
-.arrow-buttons button {
-  background-color: white;
-  border: 0;
-  width: 4vw;
-  height: 8vh;
-  border-radius: 6px;
-  text-align: center;
-}
-
-.arrow-buttons button:hover {
-  background-color: rgb(202, 202, 202);
-}
-
-.arrow-buttons {
-  margin: 0 6vw 0 15vw;
-  display: flex;
-  gap: 0.3vw;
-  align-self: end;
-}
-
-.arrow-buttons svg {
-  width: 1.3vw;
-  height: auto;
-  overflow: visible;
-}
-
-.second-row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.story-card {
-  background-color: gray;
-  height: 35vh;
-  width: 16vw;
-}
-
-.card-screen {
-  height: 40vh;
-  width: 93vw;
-  padding: 2.5vh 0;
-  overflow: hidden;
-}
-
-.card-grid {
-  transition: all 0.6s ease;
-  width: 300vw;
-  display: flex;
-  gap: 2vw;
-}
-
-.button-holder {
-  margin-top: 6vh;
-  display: flex;
-}
 
 /*--- References ---*/
 
