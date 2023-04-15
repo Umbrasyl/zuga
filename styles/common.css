@@ -26,11 +26,11 @@ div.visually-hidden {
 .fs-200 { font-size: 1rem; }
 .fs-300 { font-size: 1.25rem; }
 .fs-400 { font-size: 1.5rem; }
-.fs-500 { font-size: 1.875rem; }
-.fs-600 { font-size: 3.125rem; }
-.fs-700 { font-size: 3.375rem; }
-.fs-800 { font-size: 3.875rem; }
-.fs-900 { font-size: 4.7rem; }
+.fs-500 { font-size: 1.75rem; }
+.fs-600 { font-size: 3rem; }
+.fs-700 { font-size: 3.25rem; }
+.fs-800 { font-size: 3.75rem; }
+.fs-900 { font-size: 4.5rem; }
 
 @font-face {
   font-family: "galano-grotesque-light";

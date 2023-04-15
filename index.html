@@ -252,9 +252,16 @@
         </a>
       </div>
     </div>
-    <div class="blog-links">
-      <p class="h3">BLOG</p>
+    <div class="blog-links width-wrapper">
+      <p class="fs-500 text-color-red">BLOG</p>
       <div class="blog-card-holder">
+        <a href="">
+          <div class="blog-card">
+            <img src="" alt="Herhangi bir marka" />
+            <p>15 Haziran 2022</p>
+            <p>Metaverse Hayatımızı Nasıl Değiştirecek?</p>
+          </div>
+        </a>
         <a href="">
           <div class="blog-card">
             <img src="" alt="Herhangi bir marka" />
@@ -279,20 +286,23 @@
       </div>
     </div>
     <div class="contact">
-      <p class="h3">Bizimle iletişime geçin</p>
-      <p>Verdiğiniz bilgileri sizinle iletişime geçmek için kullanacağız.</p>
+      <div class="contact-text-holder">
+        <p class="fs-600">Bizimle iletişime geçin</p>
+        <p class="fs-400">Verdiğiniz bilgileri sizinle iletişime geçmek için kullanacağız.</p>
+      </div>
       <form action="post" class="contact-form">
-        <input type="text" placeholder="Ad Soyad" id="name" />
-        <input type="text" placeholder="Marka Adı" id="brand" />
-        <input type="text" placeholder="Telefon Numarası" id="number" />
-        <input type="text" placeholder="E-Posta" id="email" />
-        <div class="third-row-holder">
+        <div class="top-row">
+          <input type="text" placeholder="Ad Soyad" id="name" />
+          <input type="text" placeholder="Marka Adı" id="brand" />
+          <input type="text" placeholder="Telefon Numarası" id="number" />
+          <input type="text" placeholder="E-Posta" id="email" />
+        </div>
+        <div class="bottom-row">
           <div class="checkbox-holder">
             <input type="checkbox" name="terms" id="terms" />
-            <label for="terms" class="h5"
-              ><a href="">KVKK Aydınlatma Metni</a>'ni okudum ve kabul
-              ediyorum.</label
-            >
+            <label for="terms">
+              <a href="">KVKK Aydınlatma Metni</a>'ni okudum ve kabul ediyorum.
+            </label>
           </div>
           <button type="submit">Gönder</button>
         </div>
