@@ -96,10 +96,7 @@
 }
 
 .au-vid-column {
-  margin: 0 auto;
-  background-color: var(--cl-neutral-900);
-  width: 75%;
-  height: 30rem;
+  padding: 0 3vw;
 }
 
 /* #endregion */
@@ -157,10 +154,8 @@
 .slide-card-text > p:nth-child(7) { grid-area: seven; }
 
 .slide-card-text {
-  width: clamp();
   display: grid;
   grid-auto-columns: 1fr;
-  gap: 1rem;
   grid-template-areas: 
   "one one"
   "two three"
