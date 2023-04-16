@@ -228,7 +228,7 @@ a:visited {
   position: fixed;
   top: 0;
   z-index: 10;
-  width: 100vw;
+  width: 100%;
   transition: background-color 0.6s ease;
 }
 
@@ -252,7 +252,7 @@ a:visited {
 }
 
 .btn-nav svg {
-  background-color: var(--cl-neutral-900);
+  background-color: inherit;
 }
 
 .stroke-top,
@@ -313,6 +313,9 @@ a:visited {
 /* #endregion */
 
 /* #region FOOTER */
-
+footer {
+  height: 30vh;
+  background-color: black;
+}
 /* #endregion */
 
