@@ -1,6 +1,7 @@
 "use strict";
 const nav_container = document.getElementById("nav-container");
 const mediaQuery = window.matchMedia("(min-width: 50em)");
+const header_banner = document.querySelector(".header-banner");
 
 // #region Mobile Nav Close Button Animation
 const btn_nav = document.getElementById("btn-nav");
@@ -17,7 +18,6 @@ btn_nav.addEventListener("click", ()=>{
 
 // #region Mobile And Desktop Nav Toggle
 const header = document.querySelector("header");
-const header_banner = document.querySelector(".header-banner");
 const nav = document.querySelector(".nav");
 const div_btn_nav = document.getElementById("div-btn-nav");
 
@@ -55,3 +55,15 @@ handleWidthChange(mediaQuery);
 
 // #endregion
 
+// #region Header Background Change on Scroll
+
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset > 0) {
+    header_banner.classList.add('black-background');
+  } else {
+    header_banner.classList.remove('black-background');
+  }
+});
+
+
+// #endregion

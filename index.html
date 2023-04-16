@@ -294,16 +294,19 @@
         <div class="top-row">
           <input type="text" placeholder="Ad Soyad" id="name" />
           <input type="text" placeholder="Marka Adı" id="brand" />
-          <input type="text" placeholder="Telefon Numarası" id="number" />
-          <input type="text" placeholder="E-Posta" id="email" />
+          <input 
+            type="tel" 
+            pattern="^\d{10}(\d{1})?$" 
+            title="Lütfen sadece sayılardan oluşan bir telefon numarası giriniz." 
+            placeholder="Telefon Numarası" 
+            id="number" />
+          <input type="email" placeholder="E-Posta" id="email" />
         </div>
         <div class="bottom-row">
-          <div class="checkbox-holder">
-            <input type="checkbox" name="terms" id="terms" />
-            <label for="terms">
-              <a href="">KVKK Aydınlatma Metni</a>'ni okudum ve kabul ediyorum.
-            </label>
-          </div>
+          <input type="checkbox" name="terms" id="terms" />
+          <label for="terms">
+            <a href="">KVKK Aydınlatma Metni</a>'ni okudum ve kabul ediyorum.
+          </label>
           <button type="submit">Gönder</button>
         </div>
       </form>
