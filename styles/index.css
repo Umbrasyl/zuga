@@ -360,7 +360,7 @@
   grid-template-areas: 
   "one"
   "two";
-  gap: 4rem;
+  gap: 2rem;
   box-shadow: 10px 10px 10px rgb(199, 199, 199);
   color: var(--cl-neutral-900);
 }
@@ -386,7 +386,7 @@
   "one two"
   "three four";
   flex-wrap: wrap;
-  gap: 1.4rem;
+  gap: 1rem;
 }
 
 .top-row > input {
@@ -400,8 +400,9 @@
 
 .bottom-row {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 
 input[type="checkbox"] {
@@ -413,9 +414,8 @@ label > a {
 }
 
 .contact-form button {
-  margin-left: auto;
   background-color: var(--cl-neutral-900);
   color: var(--cl-neutral-100);
-  padding: 0.8rem 1.2rem;
+  padding: 0.6rem 1.5rem;
 }
 /* #endregion */

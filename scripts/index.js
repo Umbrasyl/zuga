@@ -1,3 +1,4 @@
+"use strict";
 
 // #region Horizontal Scroll Slider
 function getAbsoluteCoord(ele) {
@@ -114,4 +115,3 @@ Math.easeInOutQuad = function (t, b, c, d) {
 };
 
 // #endregion
-

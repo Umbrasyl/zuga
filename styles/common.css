@@ -1,3 +1,4 @@
+
 /* #region UTILITY */
 :root {
   --cl-neutral-100: rgb(255, 255, 255);
@@ -131,7 +132,6 @@ button {
 }
 
 /* #endregion */
-
 
 /* #region THE RESET */
 
@@ -318,4 +318,3 @@ footer {
   background-color: black;
 }
 /* #endregion */
-
