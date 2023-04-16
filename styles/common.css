@@ -65,30 +65,30 @@ body {
 }
 
 html {
-  font-size: 8px;
+  font-size: 10px;
 }
 
 @media screen and (min-width: 59em) {
-  html {
-    font-size: 10px;
-  }
-}
-
-@media screen and (min-width: 79em) {
   html {
     font-size: 12px;
   }
 }
 
-@media screen and (min-width: 99em) {
+@media screen and (min-width: 79em) {
   html {
     font-size: 14px;
   }
 }
 
-@media screen and (min-width: 119em) {
+@media screen and (min-width: 99em) {
   html {
     font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 119em) {
+  html {
+    font-size: 18px;
   }
 }
 
