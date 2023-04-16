@@ -68,16 +68,23 @@ hideArrows(mediaQuery);
 // #endregion
 
 // #region Right and Left Buttons sliding cards.
+
+// We want to set the width of the cardGrid as width of one card times the number of cards plus one.
+const cardGrid = document.querySelector(".card-grid");
+const totalCards = document.querySelectorAll(".story-card");
+const cardWidth = document.querySelector(".story-card").offsetWidth;
+const cardScreen = document.querySelector(".card-screen");
+
+cardGrid.style.width = `${cardWidth * (totalCards.length + 1)}px`;
+
 const leftButton = document.querySelector(".left-button");
 const rightButton = document.querySelector(".right-button");
-const cardScreen = document.querySelector(".card-screen");
-const cardWidth = document.querySelector(".story-card").offsetWidth;
 
 leftButton.addEventListener("click", () => {
-  smoothScrollTo(cardScreen, -2 * cardWidth, 1000);
+  smoothScrollTo(cardScreen, -2 * cardWidth, 800);
 });
 rightButton.addEventListener("click", () => {
-  smoothScrollTo(cardScreen, 2 * cardWidth, 1000);
+  smoothScrollTo(cardScreen, 2 * cardWidth, 800);
 });
 
 function smoothScrollTo(element, scrollAmount, duration) {
