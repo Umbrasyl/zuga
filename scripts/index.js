@@ -26,10 +26,10 @@ for(let i = 0; i < 4; i++) {
 const bringOnScreen = function(inputCardHeaderArray, inputCardTextArray, index) {
   for (let i = 0; i < inputCardHeaderArray.length; i++) {
     if (i === index) {
-      inputCardHeaderArray[i].classList.add("red-bar");
+      inputCardHeaderArray[i].classList.add("shown-card");
       inputCardTextArray[i].classList.remove("visually-hidden");
     } else {
-      inputCardHeaderArray[i].classList.remove("red-bar");
+      inputCardHeaderArray[i].classList.remove("shown-card");
       inputCardTextArray[i].classList.add("visually-hidden");
     }
   }
@@ -49,7 +49,6 @@ function swapCard() {
   }
 }
 
-
 // #endregion
 
 // #region Hide Left and Right Arrows on Mobile
@@ -58,6 +57,7 @@ const buttonsDiv = document.querySelector(".arrow-buttons");
 function hideArrows(e) {
   if (e.matches) {
     buttonsDiv.classList.remove("visually-hidden");
+
   } else {
     buttonsDiv.classList.add("visually-hidden");
   }
