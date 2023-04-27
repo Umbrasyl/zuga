@@ -287,7 +287,7 @@
   --card-height: calc(1.3 * var(--card-width));
   background-color: var(--cl-neutral-100);
   color: var(--cl-neutral-900);
-  height: calc(1.3 * var(--card-width));
+  height: var(--card-height);
   width: var(--card-width);
   display: flex;
   flex-direction: column;

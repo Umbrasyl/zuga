@@ -2,6 +2,8 @@
 const nav_container = document.getElementById("nav-container");
 const mediaQuery = window.matchMedia("(min-width: 50em)");
 const header_banner = document.querySelector(".header-banner");
+const navElement = document.querySelector("nav");
+let isNavHidden = navElement.getAttribute("aria-hidden") === "true";
 
 // #region Mobile Nav Close Button Animation
 const btn_nav = document.getElementById("btn-nav");
@@ -13,13 +15,15 @@ btn_nav.addEventListener("click", ()=>{
   btn_nav_stroke_mid.classList.toggle("zero-width");
   btn_nav_stroke_bottom.classList.toggle("rotate-45");
   nav_container.classList.toggle("visually-hidden");
+  isNavHidden = !isNavHidden;
+  navElement.setAttribute("aria-hidden", isNavHidden);
 });
 // #endregion
 
 // #region Mobile And Desktop Nav Toggle
 const header = document.querySelector("header");
-const nav = document.querySelector(".nav");
 const div_btn_nav = document.getElementById("div-btn-nav");
+const nav = document.querySelector(".nav");
 
 function handleWidthChange(e) {
   if(e.matches) {
@@ -34,7 +38,9 @@ function handleWidthChange(e) {
     // Remove the full width and height nav menu
     nav_container.classList.remove("nav-container");
     nav_container.classList.remove("visually-hidden");
-    // Appen the nav menu to the top of the page header banner or it won't show up  as the banner is position fixed.
+    isNavHidden = false;
+    navElement.setAttribute("aria-hidden", isNavHidden);
+    // Append the nav menu to the top of the page header banner or it won't show up  as the banner is position fixed.
     header_banner.appendChild(nav_container);
 
   } else {
@@ -45,6 +51,8 @@ function handleWidthChange(e) {
     div_btn_nav.classList.remove("visually-hidden");
     nav_container.classList.add("nav-container");
     nav_container.classList.add("visually-hidden");
+    isNavHidden = true
+    navElement.setAttribute("aria-hidden", isNavHidden);
     // Append the full page menu to the header element.
     header.appendChild(nav_container);
   }

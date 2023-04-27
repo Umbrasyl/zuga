@@ -28,6 +28,7 @@ div.visually-hidden {
 .fs-300 { font-size: 1.25rem; }
 .fs-400 { font-size: 1.5rem; }
 .fs-500 { font-size: 1.75rem; }
+.fs-550 { font-size: 2rem; }
 .fs-600 { font-size: 3rem; }
 .fs-700 { font-size: 3.25rem; }
 .fs-800 { font-size: 3.75rem; }
@@ -77,19 +78,19 @@ html {
 
 @media screen and (min-width: 79em) {
   html {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
 @media screen and (min-width: 99em) {
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 119em) {
   html {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -245,8 +246,8 @@ a:visited {
 .btn-nav svg{
   --btn-nav-width: 6rem;
   --btn-nav-height: 6rem;
-  --btn-nav-translate-x: calc(var(--btn-nav-width) * 0.0883333333);
-  --btn-nav-translate-y: calc(var(--btn-nav-height) * 0.0883333333);
+  --btn-nav-translate-x: calc(var(--btn-nav-width) * 0.07111);
+  --btn-nav-translate-y: calc(var(--btn-nav-height) * 0.07111);
   width: var(--btn-nav-width);
   height: var(--btn-nav-height);
 }
