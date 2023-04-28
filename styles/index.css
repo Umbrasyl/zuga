@@ -134,7 +134,8 @@
 }
 
 .slide-card-header:not(.shown-card),
-.slide-card-bar {
+.slide-card-bar,
+.slide-card-text:not(.visually-hidden) > .slide-card-text-header {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -147,16 +148,21 @@
 }
 
 .slide-card-header > .fs-600 {
-  font-size: 4.5rem;
+  font-size: 6rem;
 }
 
 .slide-card-header > .fs-300 {
-  font-size: 1.75rem;
+  font-size: 2.5rem;
+}
+
+.slide-card-text.fs-500 {
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 50em) {
   .slide-card-header:not(.shown-card),
-  .slide-card-bar {
+  .slide-card-bar,
+  .slide-card-text:not(.visually-hidden) > .slide-card-text-header {
     position: unset;
     width: unset;
     height: unset;
@@ -172,6 +178,10 @@
   
   .slide-card-header > .fs-300 {
     font-size: 1.25rem;
+  }
+
+  .slide-card-text.fs-500 {
+    font-size: 1.75rem;
   }
 
   .slide-card-bar {

@@ -33,6 +33,7 @@ div.visually-hidden {
 .fs-700 { font-size: 3.25rem; }
 .fs-800 { font-size: 3.75rem; }
 .fs-900 { font-size: 4.5rem; }
+.fs-950 { font-size: 6rem; }
 
 @font-face {
   font-family: "galano-grotesque-light";
@@ -222,6 +223,7 @@ a:visited {
 /* #region HEADER */
 .header-banner {
   background-color: transparent;
+  color: var(--cl-neutral-200);
   display: flex;
   padding: 2rem 5rem;
   justify-content: space-between;
@@ -233,8 +235,9 @@ a:visited {
   transition: background-color 0.6s ease;
 }
 
-.black-background {
+div.black-background {
   background-color: var(--cl-neutral-900);
+  color: var(--cl-neutral-200);
 }
 
 .logo {
@@ -301,9 +304,9 @@ a:visited {
 }
 
 .nav {
-  color: var(--cl-neutral-200);
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
+  margin-right: 6rem;
 }
 
 .nav-mobile {

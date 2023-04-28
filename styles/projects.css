@@ -1,0 +1,131 @@
+
+/* #region HEADER */
+.header-banner {
+  color: var(--cl-neutral-900);
+}
+/* #endregion */
+
+/* #region HOME */
+.home {
+  /*background-image: url("./images/home-background.jpg");*/
+  background-color: var(--cl-neutral-100);
+  color: var(--cl-neutral-900);
+  padding: 0.8rem;
+}
+
+.soft-white-wrapper {
+  background-color: var(--cl-neutral-200);
+  display: flex;
+  align-items: end;
+  padding: 3rem 0;
+}
+
+.home-header {
+  margin-top: 40vh;
+  width: clamp(8em, 50%, 28em);
+  line-height: 1.2em;
+  margin-bottom: 4rem;
+  font-size: 4rem;
+}
+
+@media screen and (min-width: 50em) {
+  .home-header {
+    font-size: 6rem;
+  }
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-between;
+  width: max(30rem, 65%);
+}
+/* #endregion */
+
+/* #region PROJECTS */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-card {
+  color: var(--cl-neutral-900);
+  display: grid;
+  grid-template-areas:
+  "one"
+  "two";
+  padding: 4.5rem 2rem;
+  border-bottom: 2px solid rgb(160, 160, 160);
+  width: max(min(100%, 36rem), 50%);
+  column-gap: 6rem;
+  row-gap: 2rem;
+  margin: 0 auto;
+}
+
+.first-card {
+  margin-top: 4.5rem;
+  border-top: 2px solid rgb(160, 160, 160);
+  grid-auto-columns: 7fr 3fr;
+  width: 100%;
+}
+
+@media screen and (min-width: 50em) {
+  .first-card {
+    grid-template-areas:
+    "one two";
+  }
+}
+
+.project-card > img {
+  width: 60rem;
+  height: 30rem;
+  background-color: var(--cl-neutral-900);
+}
+
+.project-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-header {
+  font-size: 2.5rem;
+}
+
+.text {
+  line-height: 1.2em;
+}
+
+.card-tags {
+  display: flex;
+  gap: 1rem;
+}
+
+.tag {
+  background-color: var(--cl-neutral-100);
+  padding: 0.4rem;
+  line-height: 1em;
+}
+/* #endregion */
+
+/* #region CTA BUTTON */
+.cta {
+  display: flex;
+  justify-content: center;
+  width: 20rem;
+  background-color: var(--cl-accent-400);
+  padding: 2rem 0;
+  margin: 4rem auto;
+}
+
+.cta > button {
+  color: var(--cl-neutral-100);
+}
+/* #endregion */
