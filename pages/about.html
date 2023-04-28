@@ -1,194 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zuga</title>
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <img src="" alt="Zuga Dijital Reklam Ajansı Logo" />
-      <div>
-        <ul class="nav">
-          <li class="nav__item"><a href="">Projeler</a></li>
-          <li class="nav__item"><a href="">Hizmetler</a></li>
-          <li class="nav__item"><a href="">Hakkımızda</a></li>
-          <li class="nav__item"><a href="">Blog</a></li>
-          <li class="nav__item"><a href="">İletişim</a></li>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zuga</title>
+  <link rel="stylesheet" href="../styles/common.css">
+  <link rel="stylesheet" href="../styles/about.css">
+  <script src="../scripts/common.js" defer></script>
+</head>
+<body class="ff-ggl fs-200">
+  <header>
+    <div class="header-banner text-color-white">
+      <img class="logo" src="" alt="Zuga Dijital Reklam Ajansı'nın Logosu" />
+      <div id="div-btn-nav">
+        <button class="btn-nav" id="btn-nav">
+          <?xml version="1.0" encoding="utf-8"?>
+          <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="stroke-bottom" d="M4 18L20 18" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+            <path class="stroke-mid" d="M4 12L20 12" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+            <path class="stroke-top" d="M4 6L20 6" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="nav-container" class="visually-hidden animate-width nav-container ff-ggs">
+      <nav id="navigation" aria-label="Main Menu">
+        <ul role="list" class="nav ff-ggb fs-500 link-hover-red nav-mobile">
+          <li><a href="">Projeler</a></li>
+          <li><a href="">Hizmetler</a></li>
+          <li><a href="">Hakkımızda</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">İletişim</a></li>
         </ul>
-      </div>
-    </header>
-
-    <div class="body__title--big">
-      <span>Fikirler Algıyı Değiştirir.</span>
+      </nav>
     </div>
-
-    <!--HERO-->
-    <div class="hero__title wrapper">
-      <div class="hero__title--small">
-        <span>BİZ KİMİZ</span>
-      </div>
-    </div>
-    <div class="hero wrapper">
-      <div class="hero__image"></div>
-      <div class="hero__article">
-        <div class="hero__article__title">
-          Hedeflerinize ulaşmanıza yardımcı oluyoruz.
+  </header>
+  <main>
+    <div class="hero width-wrapper text-color-black">
+      <p class="hero-header fs-900 ff-ggb">Fikirler Algıyı Değiştirir.</p>
+      <p class="text-color-red fs-500 ff-ggb">BİZ KİMİZ</p>
+      <div class="hero-content">
+        <div class="hero-content-img"><img src="#" alt=""></div>
+        <div class="content-container">
+          <div class="hero-content-text fs-300">
+            <p class="text-header ff-ggb fs-600">Hedeflerinize ulaşmanıza yardımcı oluyoruz.</p>
+            <p class="text">
+              Müşterilerimiz adına dijital pazarlama stratejileri oluşturarak marka hedeflerine ulaşmalarına
+              yardımcı olan bir reklam ajansıyız.
+            </p>
+            <p class="text">
+              Hem yurtiçinde hem yurtdışında çeşitli sektörlerdeki markaların içerik, tasarım ve
+              reklam çalışmalarını yönetiyoruz.
+            </p>
+          </div>
+          <a href="" class="hero-button-link">
+            <button class="hero-button fs-500 text-color-white">
+              <p class="">BAŞARI HİKAYELERİMİZ</p>
+              <img src="../assets/svgs/right-arrow.svg">
+            </button>
+          </a>
         </div>
-        <p class="hero__article__content">
-          Müşterilerimiz adına dijital pazarlama stratejileri
-          oluşturarak marka hedeflerine ulaşmalarına
-          yardımcı olan bir reklam ajansıyız.
-        </p>
-        <p class="hero__article__content">
-          Hem yurtiçinde hem yurtdışında çeşitli
-          sektörlerdeki markaların içerik, tasarım ve
-          reklam çalışmalarını yönetiyoruz. 
-        </p>
-        <div class="hero__article__button">
-          <div class="black-div-button">
-            <p class="h4">BAŞARI HİKAYELERİMİZ</p>
-            <svg
-              width="120"
-              height="90"
-              viewBox="0 0 120 90"
-              stroke="white"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="Frame 1">
-                <g id="arrow">
-                  <path
-                    id="line-1"
-                    d="M71 87.4264L113.073 45.3535"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    id="line-2"
-                    d="M71 3L113.073 45.0729"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                  />
-                </g>
-              </g>
-            </svg>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <p class="fs-900 text-color-red ff-ggb">700+</p>
+          <p class="fs-400">Tamamlanan Proje</p>
+        </div>
+        <div class="stat-card">
+          <p class="fs-900 text-color-red ff-ggb">70+</p>
+          <p class="fs-400">Web Tasarımı</p>
+        </div>
+        <div class="stat-card">
+          <p class="fs-900 text-color-red ff-ggb">14K</p>
+          <p class="fs-400">Tüketilen Kahve Fincanı</p>
+        </div>
+        <div class="stat-card">
+          <p class="fs-900 text-color-red ff-ggb">30+</p>
+          <p class="fs-400">Ekip Arkadaşı</p>
+        </div>
+      </div>
+      
+    </div>
+    <div class="values-wrapper">
+      <div class="values width-wrapper text-color-white fs-300">
+        <p class="fs-400 ff-ggb text-color-red">DEĞERLERİMİZ</p>
+        <div class="card-grid">
+          <div class="value-card">
+            <p class="value-card-header">ŞEFFAFLIK</p>
+            <p class="value-card-text">
+              Yürüttüğümüz her projenin arkasındaki neden ve nasılları, tamamlanışında neleri gerçekleştirmeyi
+              amaçladığımızı açık bir dille ifade ederiz. Amacımız, dokunabileceğimiz her konuda destek olmaktır.
+            </p>
+          </div>
+          <div class="value-card">
+            <p class="value-card-header">SORUMLULUK</p>
+            <p class="value-card-text">
+              Görev ve sorumluluklarımızı yerine getirdikten sonra, yapılan işlerin sonuçlarını veri raporlarıyla
+              açıklamayı ilke edindik.
+            </p>
+          </div>
+          <div class="value-card">
+            <p class="value-card-header">İŞ AHLAKI</p>
+            <p class="value-card-text">
+              Tüm davranışlarımızın ve çalışma şeklimizin mesleki etik ilkelere uymasını sağlarız. Saygılı,
+              dürüst, adaletli, güvenilir, çalışkan ve empatik olmaya çalışırız.
+            </p>
+          </div>
+          <div class="value-card">
+            <p class="value-card-header">MERAK</p>
+            <p class="value-card-text">
+              İçimizden gelen istekle her zaman daha fazla anlamaya, öğrenmeye ve araştırmaya yöneliriz,
+              bu alışkanlığımızın bizi her seferinde %1 bile olsa daha iyiye götürebileceğine inanırız.
+            </p>
+          </div>
+          <div class="value-card">
+            <p class="value-card-header">YENİLİK</p>
+            <p class="value-card-text">
+              Değişimi yönlendirmek ve geleceğin dijital ürünler için neler getireceğini ortaya çıkarmak isteyen bir
+              tutumu benimsedik. Hareket halinde kalarak yeniliklere uyum sağlarız.
+            </p>
+          </div>
+          <div class="value-card">
+            <p class="value-card-header">TUTKU</p>
+            <p class="value-card-text">
+              İşimizi büyük bir hevesle yapıyoruz ve başarımızın sırrını bununla cevaplıyoruz. Dokunduğumuz her
+              proje, tutkumuzun izlerini taşır.
+            </p>
           </div>
         </div>
       </div>
     </div>
-    
-    <!--CARDS-->
-    <div class="cards wrapper">
-      <div class="cards__item">
-        <span class="cards__item__title">700+</span>
-        <p class="cards__item__content" >Tamamlanan Proje</p>
-      </div>
-      <div class="cards__item">
-        <span class="cards__item__title">70+</span>
-        <p class="cards__item__content" >Websitesi Tasarımı</p>
-      </div>
-      <div class="cards__item">
-        <span class="cards__item__title">14k</span>
-        <p class="cards__item__content" >Tüketilen Kahve fincanı</p>
-      </div>
-      <div class="cards__item">
-        <span class="cards__item__title">30+</span>
-        <p class="cards__item__content">Ekip Arkadaşı</p>
-        </div>
-      </div>
-    </div>
-
-    <!--VALUES-->
-    <div class="values">
-      <div class="values__title">
-      </div>
-      <div class="values__article">
-        <div class="values__article__items">
-          <div class="values__article__items__title">ŞEFFAFLIK</div>
-          <p class="values__article__items__content">
-            Yürüttüğümüz her projenin arkasındaki neden
-            ve nasılları, tamamlanışında neleri gerçekleştirmeyi
-            amaçladığımızı açık bir dille ifade ederiz.
-            Amacımız, dokunabileceğimiz her konuda
-            destek olmaktır.
-          </p>
-        </div>
-        <div class="values__article__items">
-          <div class="values__article__items__title">SORUMLULUK</div>
-          <p class="values__article__items__content">Görev ve sorumluluklarımızı yerine getirdikten
-            sonra, yapılan işlerin sonuçlarını veri raporlarıyla
-            açıklamayı ilke edindik.
-          </p>
-        </div>
-        <div class="values__article__items">
-          <div class="values__article__items__title">İŞ AHLAKI</div>
-          <p class="values__article__items__content">
-            Tüm davranışlarımızın ve çalışma şeklimizin
-            mesleki etik ilkelere uymasını sağlarız. Saygılı,
-            dürüst, adaletli, güvenilir, çalışkan ve empatik
-            olmaya çalışırız.</p>  
-        </div>
-        <div class="values__article__items">
-          <div class="values__article__items__title">MERAK</div>
-          <p class="values__article__items__content">
-            İçimizden gelen istekle her zaman daha fazla
-            anlamaya, öğrenmeye ve araştırmaya yöneliriz,
-            bu alışkanlığımızın bizi her seferinde %1 bile olsa
-            daha iyiye götürebileceğine inanırız.
-          </p>
-        </div>
-        <div class="values__article__items">
-          <div class="values__article__items__title">YENİLİK</div>
-          <p class="values__article__items__content">
-            Değişimi yönlendirmek ve geleceğin dijital ürünler
-            için neler getireceğini ortaya çıkarmak isteyen bir
-            tutumu benimsedik. Hareket halinde kalarak
-            yeniliklere uyum sağlarız.
-          </p>
-        </div>
-        <div class="values__article__items">
-          <div class="values__article__items__title">TUTKU</div>
-          <p class="values__article__items__content">
-            İşimizi büyük bir hevesle yapıyoruz ve başarımızın
-            sırrını bununla cevaplıyoruz. Dokunduğumuz her
-            proje, tutkumuzun izlerini taşır.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!--CONTACT FORM-->
     <div class="contact">
-      <p class="h3">
-        Bizimle iletişime geçin
-      </p>
-      <p>
-        Verdiğiniz bilgileri sizinle iletişime geçmek için kullanacağız.
-      </p>
+      <div class="contact-text-holder">
+        <p class="fs-600 ff-ggs">Bizimle iletişime geçin</p>
+        <p class="fs-400">Verdiğiniz bilgileri sizinle iletişime geçmek için kullanacağız.</p>
+      </div>
       <form action="post" class="contact-form">
-        <input type="text" placeholder="Ad Soyad" id="name" />
-        <input type="text" placeholder="Marka Adı" id="brand" />
-        <input type="text" placeholder="Telefon Numarası" id="number" />
-        <input type="text" placeholder="E-Posta" id="email" />
-        <div class="third-row-holder">
-          <div class="checkbox-holder">
-            <input type="checkbox" name="terms" id="terms" />
-            <label for="terms" class="h5">
-              <a href="">
-                KVKK Aydınlatma Metni</a>'ni okudum ve kabul ediyorum.
+        <div class="top-row">
+          <input type="text" placeholder="Ad Soyad" id="name" />
+          <input type="text" placeholder="Marka Adı" id="brand" />
+          <input 
+            type="tel" 
+            pattern="^\d{10}(\d{1})?$" 
+            title="Lütfen sadece sayılardan oluşan bir telefon numarası giriniz." 
+            placeholder="Telefon Numarası" 
+            id="number" />
+          <input type="email" placeholder="E-Posta" id="email" required/>
+        </div>
+        <div class="bottom-row">
+          <div class="bottom-row-checkbox">
+            <input type="checkbox" name="terms" id="terms" required/>
+            <label for="terms">
+              <a href="">KVKK Aydınlatma Metni</a>'ni okudum ve kabul ediyorum.
             </label>
           </div>
-          <button type="submit">Gönder</button>
+          <button type="submit" class="ff-ggs">Gönder</button>
         </div>
       </form>
     </div>
+  </main>
+  <footer>
 
-    <!--FOOTER-->
-    <footer></footer>
-  </body>
+  </footer>
+</body>
 </html>
